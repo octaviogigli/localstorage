@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Catalogo de Productos</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Catalogo de Productos</h1>
+        
+        <h2>Agregar Producto</h2>
+        <input type="text" id="nombre" placeholder="Nombre">
+        <input type="number" id="precio" placeholder="Precio">
+        <input type="number" id="stock" placeholder="Stock">
+        <input type="text" id="categoria" placeholder="Categoría">
+        <button onclick="agregarProducto()">Agregar</button>
+
+        <h2>Buscar por Categoria</h2>
+        <input type="text" id="buscarCategoria" placeholder="Categoría">
+        <button onclick="buscarProductos()">Buscar</button>
+
+        <h2>Actualizar Stock</h2>
+        <input type="text" id="actualizarNombre" placeholder="Nombre del producto">
+        <input type="number" id="nuevoStock" placeholder="Nuevo stock">
+        <button onclick="actualizarStock()">Actualizar</button>
+
+        <h2>Eliminar Producto</h2>
+        <input type="text" id="eliminarNombre" placeholder="Nombre del producto">
+        <button onclick="eliminarProducto()">Eliminar</button>
+
+        <h2>Valor Total del Inventario</h2>
+        <button onclick="calcularTotal()">Calcular</button>
+        <p id="total"></p>
+
+        <h2>Productos</h2>
+        <div id="listaProductos"></div>
+    </div>
+
+<script src="script.js"></script>
+<link rel="stylesheet" href="stilos.css">
+</body>
+</html>
